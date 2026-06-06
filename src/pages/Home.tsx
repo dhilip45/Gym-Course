@@ -30,8 +30,8 @@ const Home = () => {
   <div className="absolute inset-0 bg-black/70" />
 
   {/* Content */}
-  <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-    <p className="text-yellow-500 uppercase tracking-widest mb-4">
+  <div className="relative z-10 max-w-6xl mx-auto px-8 text-center">
+    <p className="text-yellow-500 uppercase tracking-widest mb-4 mt-8">
       Premium Fitness Platform
     </p>
 
