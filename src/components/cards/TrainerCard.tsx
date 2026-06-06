@@ -1,39 +1,31 @@
-interface TestimonialCardProps {
+interface TrainerCardProps {
   name: string;
-  result: string;
-  review: string;
+  role: string;
+  experience: string;
   image: string;
 }
 
-const TestimonialCard = ({
+const TrainerCard = ({
   name,
-  result,
-  review,
+  role,
+  experience,
   image,
-}: TestimonialCardProps) => {
+}: TrainerCardProps) => {
   return (
-    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 text-center hover:scale-105 transition duration-300">
-      
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-6 text-center">
       <img
         src={image}
         alt={name}
-        className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-yellow-500"
+        className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
       />
 
-      <h3 className="text-2xl font-bold text-white">
-        {name}
-      </h3>
+      <h3 className="text-2xl font-bold">{name}</h3>
 
-      <p className="text-yellow-500 mt-2 font-semibold">
-        {result}
-      </p>
+      <p className="text-yellow-500 mt-2">{role}</p>
 
-      <p className="text-gray-400 mt-4">
-        "{review}"
-      </p>
-
+      <p className="text-gray-400 mt-2">{experience}</p>
     </div>
   );
 };
 
-export default TestimonialCard;
+export default TrainerCard;
